@@ -13,7 +13,9 @@
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern public/design/storybook --ignore-pattern storybook-rwds",
     "storybook:rwds": "pnpm --dir storybook-rwds storybook",
     "build:storybook:rwds": "pnpm --dir storybook-rwds build-storybook",
-    "db:generate": "drizzle-kit generate"
+    "db:generate": "drizzle-kit generate",
+    "build:static": "node scripts/build-static.mjs",
+    "start:static": "python3 -m http.server 4180 --directory dist/client"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

@@ -115,8 +115,8 @@ content as the HTML view:
 
 - Append `.md` to a URL, for example `/docs/installation.md` or `/brand.md`.
 - `/docs/ai.md` is the agent-oriented documentation entry point with status, answering rules and machine-readable links.
-- Send `Accept: text/markdown` to receive Markdown directly.
-- Add `?format=md` as an explicit fallback.
+- Send `Accept: text/markdown` to receive Markdown directly on a dynamic deployment.
+- Add `?format=md` as an explicit fallback on a dynamic deployment.
 
 The compact index at `/llms.txt` follows the llms.txt convention and links to
 the Markdown version of every guide, support article, developer document,
@@ -166,9 +166,23 @@ by the trademark policy.
 ```sh
 pnpm install --frozen-lockfile
 pnpm dev          # start the dev server (port 3000, or the next free port)
-pnpm run build    # build the deployable site
+pnpm run build    # build the Cloudflare/Vinext deployment
 pnpm start        # preview the built site locally
+pnpm run build:static  # portable static export in dist/client
+pnpm run start:static  # serve the static export locally on port 4180
 ```
+
+`build:static` sets `RUMAHL_STATIC_EXPORT=1`, omits the Cloudflare plugin and
+writes the site plus generated `*.md`, `llms.txt`, `sitemap.xml`, `rss.xml` and
+`robots.txt` files to `dist/client`. The repository includes a `vercel.json` for
+the static Vercel preset (`framework: null`, output directory `dist/client`,
+clean URLs). Discourse is not fetched during a static build; the committed local
+articles are used.
+
+The static deployment has no request-time server. `Accept: text/markdown`,
+`?format=md`, the Discourse webhook and the live Discourse refresh are therefore
+not available there; direct `.md` files and the local article set are. The
+Cloudflare/Vinext build keeps those runtime features.
 
 ## Other commands
 

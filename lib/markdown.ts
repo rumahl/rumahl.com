@@ -897,7 +897,7 @@ Use the status labels on the documentation pages. Do not infer availability from
 - Site-wide AI index: ${absolute('/llms.txt')}
 - Full site text: ${absolute('/llms-full.txt')}
 
-Every editorial page has a Markdown representation. Append \`.md\` to the page URL, send \`Accept: text/markdown\` or add \`?format=md\`.
+Every editorial page has a Markdown representation. Append \`.md\` to the page URL. Dynamic deployments also support \`Accept: text/markdown\` and \`?format=md\`; the static export serves the generated \`.md\` files directly.
 
 ## Rules for answering
 
@@ -952,7 +952,7 @@ export function llmsTxt(): string {
 > rumahl OS is an independent open-source platform for local apps and home services. It connects existing services or provides native ones, keeps their lifecycles independent, and runs on hardware you control. The project is in active development and is not a company.
 
 Canonical site: ${absolute('/')}
-Markdown access: append \`.md\` to any page URL, or send \`Accept: text/markdown\`.
+Markdown access: append \`.md\` to any page URL. Dynamic deployments also support \`Accept: text/markdown\`; the static export serves the generated \`.md\` files directly.
 Full text: ${absolute('/llms-full.txt')}
 Documentation entry point: ${absolute('/docs/llms.txt')}
 Agent entry point: ${absolute('/docs/ai.md')}
