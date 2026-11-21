@@ -11,6 +11,7 @@ const eslintConfig = defineConfig([
     ".next/**",
     "out/**",
     "build/**",
+    "vendor/rumahl-ui/**",
     "next-env.d.ts",
   ]),
   {

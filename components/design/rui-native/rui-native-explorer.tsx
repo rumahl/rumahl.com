@@ -95,7 +95,7 @@ const WALLPAPERS = {
 type WallpaperKey = keyof typeof WALLPAPERS;
 type SurfaceChoice = 'window' | 'canvas' | 'none';
 
-const storyModules = import.meta.glob('../../../../rumahl/frontend/packages/ui/src/components/**/*.stories.tsx', {eager: true}) as Record<string, StoryModule>;
+const storyModules = import.meta.glob('../../../vendor/rumahl-ui/src/components/**/*.stories.tsx', {eager: true}) as Record<string, StoryModule>;
 
 function humanize(value: string) {
   return value

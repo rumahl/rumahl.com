@@ -5,7 +5,7 @@ import hostingConfig from "./.openai/hosting.json";
 import { readExecutionProfile } from "./scripts/execution-profile.mjs";
 import { sites } from "./build/sites-vite-plugin";
 
-const RUI_SOURCE = resolve(process.cwd(), "../rumahl/frontend/packages/ui/src");
+const RUI_SOURCE = resolve(process.cwd(), "vendor/rumahl-ui/src");
 
 const SITE_CREATOR_PLACEHOLDER_DATABASE_ID =
   "00000000-0000-4000-8000-000000000000";
@@ -61,7 +61,7 @@ export default defineConfig(async () => {
     server: {
       ...(managedLinux ? { host: "0.0.0.0", allowedHosts: ["terminal.local"] } : {}),
       ...(isCodexSeatbeltSandbox ? { watch: { useFsEvents: false, usePolling: true } } : {}),
-      fs: {allow: [process.cwd(), RUI_SOURCE]},
+      fs: {allow: [process.cwd()]},
     },
     plugins: [
       vinext(),

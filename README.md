@@ -185,6 +185,7 @@ pnpm start        # preview the built site locally
 - `components/rumahl/developer-docs.ts` — separate developer documentation
 - `components/design/` · `app/design/` — independent RWDS/RUI design microsite and Color Table Generator
 - `storybook-rwds/` — Storybook for the website design system
+- `vendor/rumahl-ui/` — snapshotted RUI source for the native component explorer; refresh with `scripts/sync-rumahl-ui.sh`
 - `content/homepage.ts` — editorial homepage modules
 - `content/brand.ts` — brandmark, colour and usage content for `/brand`
 - `content/blog/*.md` — fallback articles (used until Discourse is connected)
