@@ -1,0 +1,9 @@
+import{i as e}from"./preload-helper-Cs4UwXAW.js";import{t}from"./iframe-CMsHJqmJ.js";import{d as n,r}from"./data-jk7lejyQ.js";import{t as i}from"./rwds-DZofpew-.js";var a,o,s,c,l;e((()=>{i(),a=t(),o={title:`RWDS/Swatch`,component:r,tags:[`autodocs`],args:{token:`--accent`,description:`Accent`},argTypes:{token:{control:`select`,options:[`--accent`,`--accent-secondary`,`--background`,`--surface`,`--surface-glass`,`--foreground`,`--foreground-muted`,`--border`]},description:{control:`text`}},parameters:{layout:`padded`,docs:{description:{component:`Preview of a colour role. Switch the Appearance toolbar to see light and dark values of the same token.`}}}},s={render:e=>(0,a.jsx)(`div`,{style:{maxWidth:220},children:(0,a.jsx)(r,{...e})})},c={render:()=>(0,a.jsx)(n,{columns:4,gap:`sm`,children:[`--accent`,`--accent-secondary`,`--background`,`--surface`,`--surface-glass`,`--foreground`,`--foreground-muted`,`--border`].map(e=>(0,a.jsx)(r,{token:e},e))})},l=[`Playground`,`AllRoles`],s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  render: args => <div style={{
+    maxWidth: 220
+  }}><Swatch {...args} /></div>
+}`,...s.parameters?.docs?.source}}},c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`{
+  render: () => <Grid columns={4} gap="sm">
+      {['--accent', '--accent-secondary', '--background', '--surface', '--surface-glass', '--foreground', '--foreground-muted', '--border'].map(token => <Swatch key={token} token={token} />)}
+    </Grid>
+}`,...c.parameters?.docs?.source}}}}))();export{c as AllRoles,s as Playground,l as __namedExportsOrder,o as default};

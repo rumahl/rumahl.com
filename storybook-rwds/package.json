@@ -1,0 +1,26 @@
+{
+  "name": "@rumahl/rwds-storybook",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "storybook": "storybook dev -p 6007",
+    "build-storybook": "storybook build -o dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "10.6.2",
+    "@storybook/addon-docs": "10.6.2",
+    "@storybook/react-vite": "10.6.2",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "lucide-react": "1.31.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "storybook": "10.6.2",
+    "typescript": "5.9.3",
+    "vite": "8.0.13"
+  }
+}

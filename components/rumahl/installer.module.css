@@ -1,0 +1,102 @@
+.installer{max-width:1100px;margin:0 auto;padding:0 56px 110px}
+.stepper{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:8px 0 28px;padding:0}
+.stepperItem{display:inline-flex;align-items:center;gap:9px;padding:9px 16px;border:1px solid var(--border);border-radius:999px;font-size:13px;color:var(--foreground-muted);background:var(--surface)}
+.stepperItem[data-active=true]{border-color:var(--accent);color:var(--foreground)}
+.stepperItem[data-done=true]{color:var(--accent)}
+.stepperNumber{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--background);font-size:11px;font-weight:700}
+.stepperItem[data-active=true] .stepperNumber{background:var(--accent);color:#fff}
+.stepperItem[data-done=true] .stepperNumber{background:color-mix(in srgb,var(--accent) 18%,transparent);color:var(--accent)}
+.panel{background:var(--surface);border:1px solid var(--border);border-radius:28px;padding:34px;margin-bottom:18px}
+.panel h2{font-size:clamp(24px,3vw,34px);font-weight:500;letter-spacing:-.04em;margin:14px 0 12px;color:var(--foreground)}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.lead{font-size:15px;line-height:1.7;color:var(--foreground-muted);max-width:640px}
+.choiceGrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
+.choiceCard{display:flex;flex-direction:column;gap:12px;align-items:flex-start;text-align:left;padding:26px;border:1px solid var(--border);border-radius:22px;background:var(--background);color:var(--foreground);transition:border-color .2s,transform .2s,box-shadow .2s}
+.choiceCard:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--accent) 40%,var(--border))}
+.choiceCard[data-active=true]{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 16%,transparent)}
+.choiceCard svg{color:var(--accent)}
+.choiceCard strong{font-size:17px;font-weight:600}
+.choiceCard span{font-size:13.5px;color:var(--foreground-muted);line-height:1.6}
+.requirements{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:30px;padding-top:26px;border-top:1px solid var(--border)}
+.requirements h3{font-size:14px;font-weight:600;margin-bottom:12px;color:var(--foreground)}
+.requirements ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.requirements li{position:relative;padding-left:20px;font-size:13.5px;color:var(--foreground-muted)}
+.requirements li:before{content:'';position:absolute;left:0;top:7px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.deviceGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+.deviceCard{display:flex;flex-direction:column;text-align:left;padding:0;border:1px solid var(--border);border-radius:22px;background:var(--background);overflow:hidden;color:var(--foreground);transition:border-color .2s,transform .2s,box-shadow .2s}
+.deviceCard:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--accent) 40%,var(--border))}
+.deviceCard[data-active=true]{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 16%,transparent)}
+.deviceCard[data-disabled=true]{opacity:.55}
+.deviceArt{position:relative;display:block;height:152px;overflow:hidden;color:var(--accent);background:linear-gradient(160deg,color-mix(in srgb,var(--accent) 12%,var(--surface)),var(--surface))}
+.deviceArt svg{position:absolute;inset:0;width:100%;height:100%;padding:16px;box-sizing:border-box}
+.deviceArt img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.bestBadge,.popBadge{position:absolute;top:12px;right:12px;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
+.bestBadge{background:var(--accent);color:#fff}
+.popBadge{background:color-mix(in srgb,var(--teal) 85%,#000);color:#fff}
+.deviceBody{display:flex;flex-direction:column;gap:9px;padding:18px}
+.deviceBody strong{font-size:15px;font-weight:600}
+.deviceBrand{font-size:12px;color:var(--foreground-muted)}
+.deviceSpecs{display:flex;flex-wrap:wrap;gap:8px}
+.deviceSpecs em{display:inline-flex;align-items:center;gap:5px;font-style:normal;font-size:11px;color:var(--foreground-muted);border:1px solid var(--border);border-radius:999px;padding:3px 8px}
+.devicePrice{font-size:15px;font-weight:600;color:var(--foreground)}
+.devicePrice small{font-size:11px;font-weight:400;color:var(--foreground-muted);margin-left:6px}
+.value{display:flex;align-items:center;gap:7px;font-size:11px;color:var(--foreground-muted)}
+.valueBar{flex:1;height:5px;border-radius:999px;background:var(--border);overflow:hidden}
+.valueBar>span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--teal))}
+.warn{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:#b45309}
+.appGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:26px}
+.appCard{position:relative;display:flex;align-items:center;gap:14px;text-align:left;padding:16px;border:1px solid var(--border);border-radius:18px;background:var(--background);color:var(--foreground);transition:border-color .2s}
+.appCard:hover{border-color:color-mix(in srgb,var(--accent) 40%,var(--border))}
+.appCard[data-active=true]{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 6%,var(--background))}
+.appIcon{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent);flex-shrink:0}
+.appBody{flex:1;min-width:0}
+.appBody strong{display:block;font-size:14px;font-weight:600}
+.appBody small{display:block;font-size:12px;color:var(--foreground-muted);margin-top:3px;line-height:1.45}
+.appMeta{font-size:11px;color:var(--foreground-muted);white-space:nowrap}
+.appCheck{position:absolute;top:10px;right:10px;display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--accent);color:#fff}
+.appWarn{position:absolute;bottom:8px;right:10px;font-size:10px;color:#b45309}
+.reqRow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+.reqStat{display:flex;flex-direction:column;gap:6px;padding:20px;border:1px solid var(--border);border-radius:18px;background:var(--background)}
+.reqStat svg{color:var(--accent)}
+.reqStat strong{font-size:24px;font-weight:600;letter-spacing:-.03em;color:var(--foreground)}
+.reqStat span{font-size:12px;color:var(--foreground-muted)}
+.result{display:flex;align-items:center;gap:9px;margin-top:20px;font-size:14px;color:var(--foreground)}
+.result svg{color:var(--teal)}
+.remaining{margin-top:8px;font-size:13px;color:var(--foreground-muted)}
+.also{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:16px;font-size:12px;color:var(--foreground-muted)}
+.also em{font-style:normal;font-size:12px;border:1px solid var(--border);border-radius:999px;padding:4px 10px;color:var(--foreground)}
+.subhead{margin-top:26px;font-size:15px;font-weight:600;color:var(--foreground)}
+.prereqList{list-style:none;margin:14px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.prereqList li{display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--foreground-muted)}
+.prereqList svg{color:var(--accent);flex-shrink:0}
+.downloadRow{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:26px}
+.downloadNote{font-size:12px;color:var(--foreground-muted)}
+.primary,.ghost{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:14px 22px;font-size:14px;font-weight:600;border:1px solid transparent;transition:transform .2s cubic-bezier(.2,.7,.2,1),box-shadow .25s,border-color .25s,color .25s}
+.primary{background:var(--foreground);color:var(--background)}
+.primary:hover{transform:scale(1.035);box-shadow:0 14px 34px color-mix(in srgb,var(--accent) 28%,transparent)}
+.primary:active{transform:scale(.965)}
+.primary:disabled,.ghost:disabled{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}
+.ghost{background:var(--surface);border-color:var(--border);color:var(--foreground)}
+.ghost:hover{border-color:var(--accent);transform:scale(1.035)}
+.ghost:active{transform:scale(.965)}
+.guideHead{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.guide{list-style:none;margin:26px 0 0;padding:0;display:flex;flex-direction:column;gap:18px}
+.guide li{display:flex;gap:16px}
+.guideNumber{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;border:1px solid color-mix(in srgb,var(--accent) 45%,transparent);color:var(--accent);font-size:13px;font-weight:700;flex-shrink:0}
+.guide strong{display:block;font-size:15px;font-weight:600;color:var(--foreground)}
+.guide small{display:block;font-size:13.5px;color:var(--foreground-muted);margin-top:4px;line-height:1.6}
+.finish{display:flex;align-items:center;gap:12px;margin-top:26px;padding-top:22px;border-top:1px solid var(--border);font-size:13.5px;color:var(--foreground-muted)}
+.finish svg{color:var(--accent)}
+.finish a{color:var(--accent)}
+.actions{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:22px}
+@media(max-width:900px){.installer{padding:0 24px 80px}.deviceGrid,.appGrid{grid-template-columns:1fr 1fr}.requirements,.prereqList{grid-template-columns:1fr}}
+@media(max-width:600px){.installer{padding:0 18px 70px}.panel{padding:24px 20px;border-radius:24px}.choiceGrid,.deviceGrid,.appGrid,.reqRow{grid-template-columns:1fr}.actions{flex-direction:column-reverse;align-items:stretch}.actions button{justify-content:center}}
+.deviceMeters{display:flex;flex-wrap:wrap;gap:10px}
+.deviceMeters em{display:inline-flex;align-items:center;gap:5px;font-style:normal;font-size:11px;color:var(--foreground-muted)}
+.deviceToolbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:22px}
+.deviceSearch{display:flex;flex:1;min-width:220px;max-width:360px;align-items:center;gap:10px;padding:11px 15px;border:1px solid var(--border);border-radius:999px;background:var(--background);color:var(--foreground-muted)}
+.deviceSearch input{flex:1;min-width:0;border:0;background:transparent;outline:none;font:inherit;font-size:14px;color:var(--foreground)}
+.deviceFilters{display:flex;flex-wrap:wrap;gap:8px}
+.deviceFilters button{border:1px solid var(--border);background:var(--background);color:var(--foreground-muted);border-radius:999px;padding:8px 14px;font-size:12.5px;transition:border-color .2s,color .2s,background .2s}
+.deviceFilters button:hover{border-color:var(--accent)}
+.deviceFilters button[data-active=true]{background:var(--accent);border-color:var(--accent);color:#fff}

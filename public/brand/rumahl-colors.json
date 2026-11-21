@@ -1,0 +1,49 @@
+{
+  "tints": {
+    "light": {"saturation": 42, "lightness": 34, "formula": "hsl(H 42% 34%)"},
+    "dark": {"saturation": 55, "lightness": 68, "formula": "hsl(H 55% 68%)"}
+  },
+  "defaults": {
+    "green": "#28694c",
+    "deepGreen": "#0f1c16",
+    "ink": "#18201c",
+    "paper": "#e8ece7",
+    "surface": "#f8faf7",
+    "white": "#ffffff"
+  },
+  "palette": {
+    "light": [
+      "#1f4a37",
+      "#28694c",
+      "#2f8f6f",
+      "#3f6b56",
+      "#5f7a4a",
+      "#7c8a4a",
+      "#b0793a",
+      "#a05a3a",
+      "#4f6370",
+      "#18201c"
+    ],
+    "dark": [
+      "#8fd6b6",
+      "#6cc79b",
+      "#5fc79f",
+      "#8fd0b4",
+      "#c2c77a",
+      "#d7c08a",
+      "#d9ad6b",
+      "#e0a080",
+      "#a9c4b6",
+      "#f8faf7"
+    ]
+  },
+  "backgrounds": {
+    "mistGreen": "#eef4ee",
+    "sand": "#f6f1e7",
+    "mistBlue": "#eef0f7",
+    "rose": "#f7eef2",
+    "sky": "#e8f1f6",
+    "stone": "#f2f0ec"
+  },
+  "rule": "All hues are allowed at the approved light or dark tint. On photography or video, use white or black only."
+}

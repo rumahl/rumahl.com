@@ -1,0 +1,6 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{bt as t,n}from"./iframe-ey0lnv34.js";import{n as r,t as i}from"./_argtypes-9JdYHY1M.js";var a,o,s;function c(){return(c=e((()=>{n(),i(),a={title:`Components/SplitButton`,component:t,args:{children:`Deploy`,variant:`primary`,size:`md`,actions:[{label:`Deploy to staging`,onSelect:()=>{}},{label:`Deploy and restart`,onSelect:()=>{}},{label:`Schedule deploy`,onSelect:()=>{}}]},argTypes:{...r,variant:{control:`inline-radio`,options:[`primary`,`secondary`,`ghost`,`danger`]},size:{control:`inline-radio`,options:[`xs`,`sm`,`md`,`lg`,`xl`]},color:{control:`color`},backgroundColor:{control:`color`}},parameters:{docs:{description:{component:`A primary action plus a menu of related variants.
+
+## Rules
+- The main button is the **most likely** action; the menu holds the rest.
+- Keep the menu to a few related options.
+- Don't change the meaning of the main action between renders.`}}}},o={},s=[`Default`],o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{}`,...o.parameters?.docs?.source}}}})))()}c();export{o as Default,s as __namedExportsOrder,a as default};

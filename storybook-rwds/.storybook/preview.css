@@ -1,0 +1,45 @@
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{background:var(--background);color:var(--foreground);font-family:var(--font-rumahl,Inter),Inter,system-ui,sans-serif}
+button,input,textarea,select{font:inherit}
+.sb-page{padding:44px 46px;min-height:100vh}
+.sb-stack{display:grid;gap:18px;max-width:1080px}
+.sb-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:1080px}
+.sb-label{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--foreground-muted)}
+.sb-code{background:var(--navy);color:var(--on-dark);border-radius:14px;padding:18px 20px;font-family:var(--font-jetbrains-mono,monospace);font-size:12px;line-height:1.7;overflow:auto}
+@media(max-width:800px){.sb-grid{grid-template-columns:1fr}.sb-page{padding:28px 22px}}
+
+.rwds-preview{min-height:100vh;background:var(--background);color:var(--foreground)}
+.sb-swatches{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;max-width:1080px}
+.sb-swatch{border:1px solid var(--border);border-radius:16px;overflow:hidden;background:var(--surface)}
+.sb-swatch-color{height:90px}
+.sb-swatch-body{padding:12px 14px}
+.sb-swatch-body strong{display:block;font-size:12px;font-weight:600}
+.sb-swatch-body code{display:block;margin-top:4px;font-family:var(--font-jetbrains-mono,monospace);font-size:10.5px;color:var(--foreground-muted)}
+.sb-type{display:grid;border-top:1px solid var(--border);max-width:1080px}
+.sb-type-row{display:grid;grid-template-columns:190px minmax(0,1fr);gap:28px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--border)}
+.sb-type-row>span{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--foreground-muted)}
+.sb-type-row strong{font-size:clamp(28px,3.4vw,52px);line-height:1.06;letter-spacing:-.055em;font-weight:500}
+.sb-type-row h2{font-size:clamp(24px,2.8vw,38px);line-height:1.1;letter-spacing:-.045em}
+.sb-type-row p{font-size:16px;line-height:1.7;color:var(--foreground-muted)}
+.sb-type-row code{font-family:var(--font-jetbrains-mono,monospace);font-size:13px;color:var(--accent)}
+.sb-panel{padding:34px;border:1px solid var(--border);border-radius:24px;background:var(--surface)}
+.sb-panel h3{font-size:26px;line-height:1.15;letter-spacing:-.04em;font-weight:500;margin:14px 0 16px}
+.sb-panel p{font-size:14.5px;line-height:1.7;color:var(--foreground-muted)}
+.sb-panel ul{list-style:none;padding:0;margin:22px 0 0;border-top:1px solid var(--border)}
+.sb-panel li{display:flex;gap:12px;align-items:flex-start;padding:13px 0;border-bottom:1px solid var(--border);font-size:13.5px;line-height:1.5;color:var(--foreground-muted)}
+.sb-panel li strong{color:var(--foreground);font-weight:600;flex-shrink:0}
+.sb-panel li span{flex:1;min-width:0}
+.sb-split{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:1080px}
+.sb-callout{padding:18px 20px;border-left:3px solid var(--accent);border-radius:0 14px 14px 0;background:color-mix(in srgb,var(--accent) 6%,var(--surface));font-size:14px;line-height:1.65;color:var(--foreground-muted);max-width:1080px}
+.sb-card{padding:28px;border:1px solid var(--border);border-radius:22px;background:var(--surface);display:flex;flex-direction:column;gap:12px}
+.sb-card h3{font-size:20px;font-weight:600;letter-spacing:-.02em}
+.sb-card p{font-size:14px;line-height:1.65;color:var(--foreground-muted)}
+.sb-table-wrap{overflow:auto;border:1px solid var(--border);border-radius:18px;background:var(--surface);max-width:1080px}
+.sb-table{width:100%;border-collapse:collapse;min-width:620px}
+.sb-table th,.sb-table td{text-align:left;padding:14px 17px;border-bottom:1px solid var(--border);font-size:13px;line-height:1.55;vertical-align:top}
+.sb-table th{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--foreground-muted);background:var(--background)}
+.sb-table tr:last-child td{border-bottom:0}
+.sb-table td:first-child{font-weight:600;color:var(--foreground);white-space:nowrap}
+.sb-table code{font-family:var(--font-jetbrains-mono,monospace);font-size:11.5px;color:var(--accent)}
+@media(max-width:900px){.sb-swatches{grid-template-columns:repeat(2,minmax(0,1fr))}.sb-split{grid-template-columns:1fr}.sb-type-row{grid-template-columns:1fr;gap:8px}}

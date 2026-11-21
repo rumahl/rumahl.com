@@ -1,0 +1,22 @@
+/*
+ * rumahl mark colour tokens.
+ *
+ * Start with any hue H (0–360), then use the light or dark tint:
+ *   light: hsl(H 42% 34%)
+ *   dark:  hsl(H 55% 68%)
+ *
+ * Small adjustments for contrast are allowed. Keep the hue and depth.
+ */
+:root {
+  --rumahl-mark-light-saturation: 42%;
+  --rumahl-mark-light-lightness: 34%;
+  --rumahl-mark-dark-saturation: 55%;
+  --rumahl-mark-dark-lightness: 68%;
+
+  --rumahl-green: #28694c;
+  --rumahl-deep-green: #0f1c16;
+  --rumahl-ink: #18201c;
+  --rumahl-paper: #e8ece7;
+  --rumahl-surface: #f8faf7;
+  --rumahl-white: #ffffff;
+}

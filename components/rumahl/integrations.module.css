@@ -1,0 +1,53 @@
+.section{max-width:1320px;margin:auto;padding:88px 56px 96px;border-top:1px solid var(--border)}
+.head{display:flex;align-items:end;justify-content:space-between;gap:48px;margin-bottom:36px}
+.head h2{font-size:clamp(30px,3.6vw,48px);font-weight:500;letter-spacing:-.045em;line-height:1.08;margin-top:14px}
+.head p{font-size:14.5px;line-height:1.7;color:var(--foreground-muted);max-width:470px;flex-shrink:0}
+.levelGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.level{display:flex;flex-direction:column;gap:10px;padding:28px 26px 24px;border:1px solid var(--border);border-radius:22px;background:var(--surface);transition:transform .25s,border-color .25s}
+.level:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--accent) 40%,var(--border))}
+.levelTop{display:flex;align-items:center;justify-content:space-between;color:var(--accent)}
+.levelNumber{font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--foreground-muted)}
+.levelName{font-size:20px;font-weight:600;letter-spacing:-.02em}
+.level p{font-size:14px;line-height:1.65;color:var(--foreground-muted);flex:1}
+.levelNote{font-size:11.5px;font-weight:600;color:var(--accent);letter-spacing:.01em}
+.split{display:grid;grid-template-columns:1.25fr 1fr;gap:18px;margin-top:18px}
+.surfacePanel,.capabilityPanel{padding:36px;border-radius:26px;border:1px solid var(--border);background:var(--surface)}
+.panelEyebrow{font-size:10.5px;font-weight:700;letter-spacing:.14em;color:var(--foreground-muted)}
+.surfacePanel h3,.capabilityPanel h3{font-size:clamp(24px,2.4vw,32px);font-weight:500;letter-spacing:-.035em;line-height:1.16;margin:16px 0 16px}
+.surfacePanel p,.capabilityPanel p{font-size:14.5px;line-height:1.7;color:var(--foreground-muted)}
+.providerList{list-style:none;margin:28px 0 0;padding:0;border-top:1px solid var(--border)}
+.providerList li{display:flex;align-items:center;gap:14px;padding:15px 0;border-bottom:1px solid var(--border)}
+.providerList svg{color:var(--accent);flex-shrink:0}
+.providerList div{min-width:0;flex:1}
+.providerList strong{display:block;font-size:14px;font-weight:600}
+.providerList span{display:block;font-size:12px;color:var(--foreground-muted);margin-top:3px}
+.providerList code{font-family:var(--font-jetbrains-mono),monospace;font-size:10.5px;color:var(--foreground-muted);background:var(--background);border:1px solid var(--border);border-radius:8px;padding:5px 8px;white-space:nowrap}
+.capabilityPanel{display:flex;flex-direction:column;align-items:flex-start;background:color-mix(in srgb,var(--accent) 6%,var(--surface))}
+.capabilityIcon{display:grid;place-items:center;width:48px;height:48px;border-radius:15px;background:var(--accent);color:var(--white);margin-top:22px}
+.capabilities{list-style:none;margin:22px 0 24px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.capabilities code{display:block;font-family:var(--font-jetbrains-mono),monospace;font-size:10.5px;line-height:1;padding:9px 11px;border-radius:9px;background:var(--surface);border:1px solid var(--border);color:var(--foreground)}
+.capabilityPanel>a{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:600;color:var(--accent);margin-top:auto}
+.capabilityPanel>a:hover svg{transform:translateX(3px)}
+.capabilityPanel>a svg{transition:transform .2s}
+.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+.principles>div{display:grid;grid-template-columns:auto 1fr;gap:4px 13px;align-items:start;padding:22px 24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+.principles svg{color:var(--accent);grid-row:span 2;margin-top:1px}
+.principles strong{font-size:13.5px;font-weight:600}
+.principles span{font-size:12.5px;line-height:1.55;color:var(--foreground-muted)}
+.actions{display:flex;align-items:center;flex-wrap:wrap;gap:24px;margin-top:32px}
+.actions a{display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:600;color:var(--accent)}
+.actions .primary{padding:14px 21px;border-radius:99px;background:var(--foreground);color:var(--background)}
+.actions .primary:hover{opacity:.9}
+.actions .primary:hover svg{transform:translateX(3px)}
+.actions .primary svg{transition:transform .2s}
+@media(max-width:1000px){
+  .head{flex-direction:column;align-items:flex-start;gap:16px}
+  .head p{max-width:none}
+  .levelGrid,.principles{grid-template-columns:1fr}
+  .split{grid-template-columns:1fr}
+}
+@media(max-width:680px){
+  .section{padding-left:24px;padding-right:24px}
+  .surfacePanel,.capabilityPanel{padding:26px 22px}
+  .providerList code{display:none}
+}

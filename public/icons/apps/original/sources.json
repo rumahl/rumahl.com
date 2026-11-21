@@ -1,0 +1,37 @@
+{
+  "retrieved": "2026-10-21",
+  "collection": "https://github.com/homarr-labs/dashboard-icons",
+  "purpose": "Original app marks for identification, not endorsement. No generated or redrawn imagery.",
+  "assets": [
+    {
+      "file": "home-assistant.svg",
+      "source": "https://raw.githubusercontent.com/homarr-labs/dashboard-icons/main/svg/home-assistant.svg",
+      "sha256": "146b366b8c09502742025c4bca4e029e8e4a1b277db837d59a23b93940ebe0e0"
+    },
+    {
+      "file": "jellyfin.svg",
+      "source": "https://raw.githubusercontent.com/homarr-labs/dashboard-icons/main/svg/jellyfin.svg",
+      "sha256": "7f53cf083dbb3119ec8c5acbd8049c5033227617e461540f70591ac109124306"
+    },
+    {
+      "file": "immich.svg",
+      "source": "https://raw.githubusercontent.com/homarr-labs/dashboard-icons/main/svg/immich.svg",
+      "sha256": "a5d4a43899e63ffc7e97246034f7f63cdfdc410aa803c5713d545290601c4d89"
+    },
+    {
+      "file": "proxmox.svg",
+      "source": "https://raw.githubusercontent.com/homarr-labs/dashboard-icons/main/svg/proxmox.svg",
+      "sha256": "466d1a13608536479c8bda1168dffeccb5f6d485011e8e0819e7b36e0d83ced9"
+    },
+    {
+      "file": "vaultwarden.svg",
+      "source": "https://raw.githubusercontent.com/homarr-labs/dashboard-icons/main/svg/vaultwarden.svg",
+      "sha256": "afa3af723b4de7f502d2cc962352842a5cb41026bb5940a9f970cb5271b9472b"
+    },
+    {
+      "file": "ollama.svg",
+      "source": "https://raw.githubusercontent.com/homarr-labs/dashboard-icons/main/svg/ollama.svg",
+      "sha256": "c2a14336a00c943cbbe1739d4a9d4146b0606c342fd6876defb6e35f918095bf"
+    }
+  ]
+}

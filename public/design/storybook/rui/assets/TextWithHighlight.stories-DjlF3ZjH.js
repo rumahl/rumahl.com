@@ -1,0 +1,5 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{it as t,n}from"./iframe-ey0lnv34.js";var r,i,a;function o(){return(o=e((()=>{n(),r={title:`Primitives/TextWithHighlight`,component:t,args:{text:`Search results for the calendar app`,highlight:`calendar`,size:`md`},argTypes:{text:{control:`text`},highlight:{control:`text`},size:{control:`inline-radio`,options:[`xs`,`sm`,`md`,`lg`,`xl`]}},parameters:{docs:{description:{component:`Text with a matched substring emphasised — for search results.
+
+## Rules
+- Only to show **why** a result matched; never style unrelated words.
+- Keeps the surrounding text intact.`}}}},i={},a=[`Default`],i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{}`,...i.parameters?.docs?.source}}}})))()}o();export{i as Default,a as __namedExportsOrder,r as default};
